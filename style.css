@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.flex-container {
+  display: flex;
+
+  border: 3px solid black;
+  /* height: 20vh; */
+
+  /* главная ось */
+  /* направление */
+  flex-direction: row;
+
+  /* управление главной осью */
+  justify-content: center;
+
+  /* управление вспом осью */
+  align-items: stretch;
+}
+
+.elem {
+  display: flex;
+  padding: 20px 40px;
+  border: 2px solid rgb(100, 5, 100);
+  background-color: tomato;
+  align-items: flex-end;
+  text-align: center;
+}
+
+.elem span {
+  background-color: yellow;
+}
+
+.new {
+  background-color: royalblue;
+}
