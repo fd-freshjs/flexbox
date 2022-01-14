@@ -10,23 +10,23 @@ body {
   display: flex;
 
   border: 3px solid black;
-  height: 50vh;
+  /* min-height: 50vh; */
 
   /* главная ось */
   /* направление */
-  /* flex-direction: row; */
-
-  /* управление главной осью */
-  /* justify-content: center; */
-
-  /* управление вспом осью */
-  align-items: center;
-
-  /* управление рядами */
-  align-content: flex-end;
+  flex-direction: row;
 
   /* управление переносом */
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+
+  /* управление главной осью */
+  /* justify-content: stretch; */
+
+  /* управление вспом осью */
+  /* align-items: flex-end; */
+
+  /* управление отступов рядов */
+  /* align-content: flex-end; */
 }
 
 .elem {
@@ -36,6 +36,18 @@ body {
   background-color: tomato;
   align-items: center;
   text-align: center;
+}
+
+.elem:nth-child(1) {
+  order: 4;
+}
+
+.elem:nth-child(2) {
+  order: 3;
+}
+
+.elem:nth-child(3) {
+  order: 2;
 }
 
 .elem span {
