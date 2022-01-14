@@ -9,39 +9,26 @@ body {
 .flex-container {
   display: flex;
 
+  max-width: 1200px;
+  min-height: 500px;
+  height: 500px;
+
   border: 3px solid black;
   /* min-height: 50vh; */
 
   /* главная ось */
   /* направление */
-  flex-direction: row;
+  flex-flow: row wrap;
 
-  /* управление переносом */
-  /* flex-wrap: wrap; */
-
-  /* управление главной осью */
-  /* justify-content: stretch; */
-
-  /* управление вспом осью */
-  /* align-items: flex-end; */
-
-  /* управление отступов рядов */
-  /* align-content: flex-end; */
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .elem {
-  display: flex;
   padding: 20px 40px;
   border: 2px solid rgb(100, 5, 100);
   background-color: tomato;
-  align-items: center;
-  justify-content: center;
-
-  flex-grow: 1;
-}
-
-.elem:nth-child(2) {
-  flex-grow: 0.25;
+  margin: 0 20px; /* space-around */
 }
 
 .elem span {
