@@ -35,19 +35,13 @@ body {
   border: 2px solid rgb(100, 5, 100);
   background-color: tomato;
   align-items: center;
-  text-align: center;
-}
+  justify-content: center;
 
-.elem:nth-child(1) {
-  order: 4;
+  flex-grow: 1;
 }
 
 .elem:nth-child(2) {
-  order: 3;
-}
-
-.elem:nth-child(3) {
-  order: 2;
+  flex-grow: 0.25;
 }
 
 .elem span {
